@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="TODO: project description">
-  <meta name="keywords" content="TODO">
+        content="Efficient Motion Planning for Manipulators with Control Barrier Function-Inspired Neural Controller">
+  <meta name="keywords" content="Manipulation; Motion planning; Control barrier function">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TODO: title</title>
+  <title>CBF-INC-RRT</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -38,7 +38,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
+      <a class="navbar-item" href="https://mingxiny.github.io/">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
@@ -70,7 +70,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">TODO: title</h1>
+          <h1 class="title is-1 publication-title">Efficient Motion Planning for Manipulators with Control Barrier Function-Inspired Neural Controller</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://todo.mit.edu">TODO: author 1 name</a>,</span>
@@ -177,7 +177,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            TODO: paragraph 1
+            Sampling-based motion planning methods for manipulators in crowded environments often suffer from expensive collision checking and high sampling complexity, which make them difficult to use in real time. To address this issue, we propose a new generalizable control barrier function (CBF)-based steering controller to reduce the number of samples needed in a sampling-based motion planner RRT. Our method combines the strength of CBF for real-time collision-avoidance control and RRT for long-horizon motion planning, by using CBF-inspired neural controller (CBF-INC) to generate control signals that steer the system towards sampled configurations by RRT. CBF-INC is learned as Neural Networks and has two variants handling different inputs, respectively: state (signed distance) input and point-cloud input from LiDAR. In the latter case, we also study two different settings: fully and partially observed environmental information. Compared to manually crafted CBF which suffers from over-approximating robot geometry, CBF-INC can balance safety and goal-reaching better without being over-conservative. Given state-based input, our neural CBF-inspired neural controller-enhanced RRT (CBF-INC-RRT) can increase the success rate by 14% while reducing the number of nodes explored by 30%, compared with vanilla RRT on hard test cases. Given LiDAR input where vanilla RRT is not directly applicable, we demonstrate that our CBF-INC-RRT can improve the success rate by 10%, compared with planning with other steering controllers.
           </p>
           <p>
             TODO: paragraph 2
